@@ -1,10 +1,47 @@
-## Artificial Intelligence in Medical Imaging: A Smart Approach to Lung Disease Diagnosis
+# 🩺 Artificial Intelligence in Medical Imaging: A Smart Approach to Lung Disease Diagnosis
 
-This project is an AI-assisted chest X-ray triage system that predicts 8 distinct lung diseases using a custom-built DenseNet121 Deep Learning model.
+## Overview
 
+An AI-powered medical imaging system that diagnoses lung diseases from chest X-ray images using a custom-trained DenseNet121 deep learning model. The platform combines deep learning and web technologies to provide real-time disease prediction and analysis.
 
-## screenshots
+## Features
 
+- Lung disease classification from chest X-ray images
+- DenseNet121 deep learning architecture
+- Django REST API backend
+- React.js frontend
+- User authentication and authorization
+- Admin dashboard for monitoring and analytics
+- Real-time prediction workflow
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+
+### Backend
+- Django
+- Django REST Framework
+
+### Machine Learning
+- TensorFlow
+- Keras
+- DenseNet121
+
+### Database
+- SQLite
+
+## Screenshots
+<img width="1240" height="1010" alt="WhatsApp-Image-2026-03-26-at-10 59 03-PM" src="https://github.com/user-attachments/assets/dc6dac22-65a0-4bdd-b5a7-28cd671ae7b8" />
+<img width="1335" height="1221" alt="WhatsApp-Image-2026-03-26-at-10 59 14-PM" src="https://github.com/user-attachments/assets/05c343ff-69ef-4d08-a12e-e368dabc6d51" />
+<img width="1343" height="848" alt="WhatsApp-Image-2026-03-26-at-10 59 37-PM" src="https://github.com/user-attachments/assets/f5bd047d-b79a-4fcb-b4b4-54fb937f6a6b" />
+<img width="1341" height="829" alt="WhatsApp-Image-2026-03-26-at-10 59 48-PM" src="https://github.com/user-attachments/assets/a530bbba-701f-4822-92e1-b3703a725720" />
+
+## Installation
+
+Follow the setup instructions below.
 
 ## Project Structure
 - **Backend**: Django API, Celery (for async model inference), TensorFlow/Keras
