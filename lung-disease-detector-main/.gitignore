@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+db.sqlite3
+*.log
+local_settings.py
+
+# Node/JS
+node_modules/
+dist/
+build/
+.npm/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Media files
+media/
+
+# Datasets and Models
+backend/dataset/
+*.h5
+*.pth
+*.zip
+*.rar

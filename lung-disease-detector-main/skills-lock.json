@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "ui-ux-pro-max": {
+      "source": "zhom/donutbrowser",
+      "sourceType": "github",
+      "computedHash": "4f8847e7025559360e526a44a81feff90d8969ff04d2071650de18ddff48fa93"
+    }
+  }
+}

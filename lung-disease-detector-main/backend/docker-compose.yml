@@ -1,0 +1,178 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: lung_disease_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/lung_disease_db
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - CELERY_TASK_ALWAYS_EAGER=False
+      - ENABLE_LOKI=True
+      - LOKI_URL=http://loki:3100/loki/api/v1/push
+      - LOKI_APP_LABEL=backend
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4317
+      - ALLOWED_HOSTS=backend,localhost,127.0.0.1
+      - CORS_ALLOWED_ORIGINS=http://localhost:5173,http://localhost:80,http://localhost
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - USE_MEDLLAMA=${USE_MEDLLAMA:-False}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-tinyllama}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - media_data:/app/media
+    command: gunicorn backend.wsgi:application -b 0.0.0.0:8000 --workers 1 --timeout 120
+
+  celery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/lung_disease_db
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - CELERY_TASK_ALWAYS_EAGER=False
+      - ENABLE_LOKI=True
+      - LOKI_URL=http://loki:3100/loki/api/v1/push
+      - LOKI_APP_LABEL=celery
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4317
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - USE_MEDLLAMA=${USE_MEDLLAMA:-False}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-tinyllama}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - backend
+      - redis
+    command: celery -A backend worker -l info --concurrency=1
+    volumes:
+      - .:/app
+      - media_data:/app/media
+
+  flower:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/lung_disease_db
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+    depends_on:
+      - db
+      - redis
+      - celery
+    command: celery -A backend flower --port=5555
+    ports:
+      - "5555:5555"
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+  nginx:
+    image: nginx:1.25
+    depends_on:
+      - backend
+      - frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - media_data:/app/media:ro
+
+  # ---------------------------------------------------------------------------
+  # Observability Stack (LGTM)
+  # ---------------------------------------------------------------------------
+
+  loki:
+    image: grafana/loki:2.9.4
+    command: -config.file=/etc/loki/loki.yaml
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./monitoring/loki.yaml:/etc/loki/loki.yaml:ro
+      - loki_data:/loki
+
+  tempo:
+    image: grafana/tempo:2.3.1
+    command: [ "-config.file=/etc/tempo/tempo.yaml" ]
+    ports:
+      - "3200:3200" # Tempo API
+      - "4317:4317" # OTLP gRPC
+      - "4318:4318" # OTLP HTTP
+    volumes:
+      - ./monitoring/tempo.yaml:/etc/tempo/tempo.yaml:ro
+      - tempo_data:/var/tempo
+
+  prometheus:
+    image: prom/prometheus:v2.49.1
+    command:
+      - --config.file=/etc/prometheus/prometheus.yaml
+      - --web.enable-remote-write-receiver
+      - --enable-feature=exemplar-storage
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yaml:/etc/prometheus/prometheus.yaml:ro
+      - prometheus_data:/prometheus
+    depends_on:
+      - backend
+
+  grafana:
+    image: grafana/grafana:10.3.1
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Admin
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - loki
+      - tempo
+      - prometheus
+
+volumes:
+  postgres_data:
+  media_data:
+  loki_data:
+  tempo_data:
+  prometheus_data:
+  grafana_data:

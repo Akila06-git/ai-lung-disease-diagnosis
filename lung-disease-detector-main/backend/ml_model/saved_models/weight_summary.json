@@ -1,0 +1,959 @@
+{
+  "dense/dense/bias": [
+    256
+  ],
+  "dense/dense/kernel": [
+    1280,
+    256
+  ],
+  "dense_1/dense_1/bias": [
+    128
+  ],
+  "dense_1/dense_1/kernel": [
+    256,
+    128
+  ],
+  "dense_2/dense_2/bias": [
+    5
+  ],
+  "dense_2/dense_2/kernel": [
+    128,
+    5
+  ],
+  "mobilenetv2_1.00_224/Conv1/kernel": [
+    3,
+    3,
+    3,
+    32
+  ],
+  "mobilenetv2_1.00_224/Conv_1/kernel": [
+    1,
+    1,
+    320,
+    1280
+  ],
+  "mobilenetv2_1.00_224/Conv_1_bn/beta": [
+    1280
+  ],
+  "mobilenetv2_1.00_224/Conv_1_bn/gamma": [
+    1280
+  ],
+  "mobilenetv2_1.00_224/Conv_1_bn/moving_mean": [
+    1280
+  ],
+  "mobilenetv2_1.00_224/Conv_1_bn/moving_variance": [
+    1280
+  ],
+  "mobilenetv2_1.00_224/block_10_depthwise/kernel": [
+    3,
+    3,
+    384,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_10_depthwise_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_depthwise_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_depthwise_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_depthwise_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_expand/kernel": [
+    1,
+    1,
+    64,
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_expand_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_expand_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_expand_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_expand_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_10_project/kernel": [
+    1,
+    1,
+    384,
+    96
+  ],
+  "mobilenetv2_1.00_224/block_10_project_BN/beta": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_10_project_BN/gamma": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_10_project_BN/moving_mean": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_10_project_BN/moving_variance": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_11_depthwise/kernel": [
+    3,
+    3,
+    576,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_11_depthwise_BN/beta": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_depthwise_BN/gamma": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_depthwise_BN/moving_mean": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_depthwise_BN/moving_variance": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_expand/kernel": [
+    1,
+    1,
+    96,
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_expand_BN/beta": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_expand_BN/gamma": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_expand_BN/moving_mean": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_expand_BN/moving_variance": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_11_project/kernel": [
+    1,
+    1,
+    576,
+    96
+  ],
+  "mobilenetv2_1.00_224/block_11_project_BN/beta": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_11_project_BN/gamma": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_11_project_BN/moving_mean": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_11_project_BN/moving_variance": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_12_depthwise/kernel": [
+    3,
+    3,
+    576,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_12_depthwise_BN/beta": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_depthwise_BN/gamma": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_depthwise_BN/moving_mean": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_depthwise_BN/moving_variance": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_expand/kernel": [
+    1,
+    1,
+    96,
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_expand_BN/beta": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_expand_BN/gamma": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_expand_BN/moving_mean": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_expand_BN/moving_variance": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_12_project/kernel": [
+    1,
+    1,
+    576,
+    96
+  ],
+  "mobilenetv2_1.00_224/block_12_project_BN/beta": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_12_project_BN/gamma": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_12_project_BN/moving_mean": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_12_project_BN/moving_variance": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_13_depthwise/kernel": [
+    3,
+    3,
+    576,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_13_depthwise_BN/beta": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_depthwise_BN/gamma": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_depthwise_BN/moving_mean": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_depthwise_BN/moving_variance": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_expand/kernel": [
+    1,
+    1,
+    96,
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_expand_BN/beta": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_expand_BN/gamma": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_expand_BN/moving_mean": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_expand_BN/moving_variance": [
+    576
+  ],
+  "mobilenetv2_1.00_224/block_13_project/kernel": [
+    1,
+    1,
+    576,
+    160
+  ],
+  "mobilenetv2_1.00_224/block_13_project_BN/beta": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_13_project_BN/gamma": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_13_project_BN/moving_mean": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_13_project_BN/moving_variance": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_14_depthwise/kernel": [
+    3,
+    3,
+    960,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_14_depthwise_BN/beta": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_depthwise_BN/gamma": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_depthwise_BN/moving_mean": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_depthwise_BN/moving_variance": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_expand/kernel": [
+    1,
+    1,
+    160,
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_expand_BN/beta": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_expand_BN/gamma": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_expand_BN/moving_mean": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_expand_BN/moving_variance": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_14_project/kernel": [
+    1,
+    1,
+    960,
+    160
+  ],
+  "mobilenetv2_1.00_224/block_14_project_BN/beta": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_14_project_BN/gamma": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_14_project_BN/moving_mean": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_14_project_BN/moving_variance": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_15_depthwise/kernel": [
+    3,
+    3,
+    960,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_15_depthwise_BN/beta": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_depthwise_BN/gamma": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_depthwise_BN/moving_mean": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_depthwise_BN/moving_variance": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_expand/kernel": [
+    1,
+    1,
+    160,
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_expand_BN/beta": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_expand_BN/gamma": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_expand_BN/moving_mean": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_expand_BN/moving_variance": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_15_project/kernel": [
+    1,
+    1,
+    960,
+    160
+  ],
+  "mobilenetv2_1.00_224/block_15_project_BN/beta": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_15_project_BN/gamma": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_15_project_BN/moving_mean": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_15_project_BN/moving_variance": [
+    160
+  ],
+  "mobilenetv2_1.00_224/block_16_depthwise/kernel": [
+    3,
+    3,
+    960,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_16_depthwise_BN/beta": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_depthwise_BN/gamma": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_depthwise_BN/moving_mean": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_depthwise_BN/moving_variance": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_expand/kernel": [
+    1,
+    1,
+    160,
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_expand_BN/beta": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_expand_BN/gamma": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_expand_BN/moving_mean": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_expand_BN/moving_variance": [
+    960
+  ],
+  "mobilenetv2_1.00_224/block_16_project/kernel": [
+    1,
+    1,
+    960,
+    320
+  ],
+  "mobilenetv2_1.00_224/block_16_project_BN/beta": [
+    320
+  ],
+  "mobilenetv2_1.00_224/block_16_project_BN/gamma": [
+    320
+  ],
+  "mobilenetv2_1.00_224/block_16_project_BN/moving_mean": [
+    320
+  ],
+  "mobilenetv2_1.00_224/block_16_project_BN/moving_variance": [
+    320
+  ],
+  "mobilenetv2_1.00_224/block_1_depthwise/kernel": [
+    3,
+    3,
+    96,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_1_depthwise_BN/beta": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_depthwise_BN/gamma": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_depthwise_BN/moving_mean": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_depthwise_BN/moving_variance": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_expand/kernel": [
+    1,
+    1,
+    16,
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_expand_BN/beta": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_expand_BN/gamma": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_expand_BN/moving_mean": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_expand_BN/moving_variance": [
+    96
+  ],
+  "mobilenetv2_1.00_224/block_1_project/kernel": [
+    1,
+    1,
+    96,
+    24
+  ],
+  "mobilenetv2_1.00_224/block_1_project_BN/beta": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_1_project_BN/gamma": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_1_project_BN/moving_mean": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_1_project_BN/moving_variance": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_2_depthwise/kernel": [
+    3,
+    3,
+    144,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_2_depthwise_BN/beta": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_depthwise_BN/gamma": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_depthwise_BN/moving_mean": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_depthwise_BN/moving_variance": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_expand/kernel": [
+    1,
+    1,
+    24,
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_expand_BN/beta": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_expand_BN/gamma": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_expand_BN/moving_mean": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_expand_BN/moving_variance": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_2_project/kernel": [
+    1,
+    1,
+    144,
+    24
+  ],
+  "mobilenetv2_1.00_224/block_2_project_BN/beta": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_2_project_BN/gamma": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_2_project_BN/moving_mean": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_2_project_BN/moving_variance": [
+    24
+  ],
+  "mobilenetv2_1.00_224/block_3_depthwise/kernel": [
+    3,
+    3,
+    144,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_3_depthwise_BN/beta": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_depthwise_BN/gamma": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_depthwise_BN/moving_mean": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_depthwise_BN/moving_variance": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_expand/kernel": [
+    1,
+    1,
+    24,
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_expand_BN/beta": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_expand_BN/gamma": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_expand_BN/moving_mean": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_expand_BN/moving_variance": [
+    144
+  ],
+  "mobilenetv2_1.00_224/block_3_project/kernel": [
+    1,
+    1,
+    144,
+    32
+  ],
+  "mobilenetv2_1.00_224/block_3_project_BN/beta": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_3_project_BN/gamma": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_3_project_BN/moving_mean": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_3_project_BN/moving_variance": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_4_depthwise/kernel": [
+    3,
+    3,
+    192,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_4_depthwise_BN/beta": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_depthwise_BN/gamma": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_depthwise_BN/moving_mean": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_depthwise_BN/moving_variance": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_expand/kernel": [
+    1,
+    1,
+    32,
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_expand_BN/beta": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_expand_BN/gamma": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_expand_BN/moving_mean": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_expand_BN/moving_variance": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_4_project/kernel": [
+    1,
+    1,
+    192,
+    32
+  ],
+  "mobilenetv2_1.00_224/block_4_project_BN/beta": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_4_project_BN/gamma": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_4_project_BN/moving_mean": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_4_project_BN/moving_variance": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_5_depthwise/kernel": [
+    3,
+    3,
+    192,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_5_depthwise_BN/beta": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_depthwise_BN/gamma": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_depthwise_BN/moving_mean": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_depthwise_BN/moving_variance": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_expand/kernel": [
+    1,
+    1,
+    32,
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_expand_BN/beta": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_expand_BN/gamma": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_expand_BN/moving_mean": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_expand_BN/moving_variance": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_5_project/kernel": [
+    1,
+    1,
+    192,
+    32
+  ],
+  "mobilenetv2_1.00_224/block_5_project_BN/beta": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_5_project_BN/gamma": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_5_project_BN/moving_mean": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_5_project_BN/moving_variance": [
+    32
+  ],
+  "mobilenetv2_1.00_224/block_6_depthwise/kernel": [
+    3,
+    3,
+    192,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_6_depthwise_BN/beta": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_depthwise_BN/gamma": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_depthwise_BN/moving_mean": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_depthwise_BN/moving_variance": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_expand/kernel": [
+    1,
+    1,
+    32,
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_expand_BN/beta": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_expand_BN/gamma": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_expand_BN/moving_mean": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_expand_BN/moving_variance": [
+    192
+  ],
+  "mobilenetv2_1.00_224/block_6_project/kernel": [
+    1,
+    1,
+    192,
+    64
+  ],
+  "mobilenetv2_1.00_224/block_6_project_BN/beta": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_6_project_BN/gamma": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_6_project_BN/moving_mean": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_6_project_BN/moving_variance": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_7_depthwise/kernel": [
+    3,
+    3,
+    384,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_7_depthwise_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_depthwise_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_depthwise_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_depthwise_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_expand/kernel": [
+    1,
+    1,
+    64,
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_expand_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_expand_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_expand_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_expand_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_7_project/kernel": [
+    1,
+    1,
+    384,
+    64
+  ],
+  "mobilenetv2_1.00_224/block_7_project_BN/beta": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_7_project_BN/gamma": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_7_project_BN/moving_mean": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_7_project_BN/moving_variance": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_8_depthwise/kernel": [
+    3,
+    3,
+    384,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_8_depthwise_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_depthwise_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_depthwise_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_depthwise_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_expand/kernel": [
+    1,
+    1,
+    64,
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_expand_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_expand_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_expand_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_expand_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_8_project/kernel": [
+    1,
+    1,
+    384,
+    64
+  ],
+  "mobilenetv2_1.00_224/block_8_project_BN/beta": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_8_project_BN/gamma": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_8_project_BN/moving_mean": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_8_project_BN/moving_variance": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_9_depthwise/kernel": [
+    3,
+    3,
+    384,
+    1
+  ],
+  "mobilenetv2_1.00_224/block_9_depthwise_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_depthwise_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_depthwise_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_depthwise_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_expand/kernel": [
+    1,
+    1,
+    64,
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_expand_BN/beta": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_expand_BN/gamma": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_expand_BN/moving_mean": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_expand_BN/moving_variance": [
+    384
+  ],
+  "mobilenetv2_1.00_224/block_9_project/kernel": [
+    1,
+    1,
+    384,
+    64
+  ],
+  "mobilenetv2_1.00_224/block_9_project_BN/beta": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_9_project_BN/gamma": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_9_project_BN/moving_mean": [
+    64
+  ],
+  "mobilenetv2_1.00_224/block_9_project_BN/moving_variance": [
+    64
+  ],
+  "mobilenetv2_1.00_224/bn_Conv1/beta": [
+    32
+  ],
+  "mobilenetv2_1.00_224/bn_Conv1/gamma": [
+    32
+  ],
+  "mobilenetv2_1.00_224/bn_Conv1/moving_mean": [
+    32
+  ],
+  "mobilenetv2_1.00_224/bn_Conv1/moving_variance": [
+    32
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_depthwise/kernel": [
+    3,
+    3,
+    32,
+    1
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_depthwise_BN/beta": [
+    32
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_depthwise_BN/gamma": [
+    32
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_depthwise_BN/moving_mean": [
+    32
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_depthwise_BN/moving_variance": [
+    32
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_project/kernel": [
+    1,
+    1,
+    32,
+    16
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_project_BN/beta": [
+    16
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_project_BN/gamma": [
+    16
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_project_BN/moving_mean": [
+    16
+  ],
+  "mobilenetv2_1.00_224/expanded_conv_project_BN/moving_variance": [
+    16
+  ]
+}
